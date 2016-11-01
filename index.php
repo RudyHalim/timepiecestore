@@ -18,8 +18,6 @@
  * See COPYING.txt for license details.
  */
 
-// putenv("MAGE_MODE=developer");
-
 try {
     require __DIR__ . '/app/bootstrap.php';
 } catch (\Exception $e) {
@@ -36,7 +34,6 @@ HTML;
 }
 
 $bootstrap = \Magento\Framework\App\Bootstrap::create(BP, $_SERVER);
-/** @var \Magento\Framework\App\Http $app */ 
+/** @var \Magento\Framework\App\Http $app */
 $app = $bootstrap->createApplication('Magento\Framework\App\Http');
 $bootstrap->run($app);
-

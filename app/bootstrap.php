@@ -12,7 +12,6 @@ error_reporting(E_ALL);
 
 /* PHP version validation */
 if (!defined('PHP_VERSION_ID') || !(PHP_VERSION_ID >= 50005 && PHP_VERSION_ID < 50700 || PHP_VERSION_ID === 70002 || PHP_VERSION_ID === 70004 || PHP_VERSION_ID >= 70006)) {
-    echo("hhh");
     if (PHP_SAPI == 'cli') {
         echo 'Magento supports PHP 5.6.5, 7.0.2, 7.0.4 and 7.0.6 or later. ' .
             'Please read http://devdocs.magento.com/guides/v1.0/install-gde/system-requirements.html';
@@ -28,7 +27,7 @@ HTML;
     exit(1);
 }
 
-require_once __DIR__ . '/autoload.php'; 
+require_once __DIR__ . '/autoload.php';
 require_once BP . '/app/functions.php';
 
 /* Custom umask value may be provided in optional mage_umask file in root */
