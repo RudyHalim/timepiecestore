@@ -1,1 +1,0 @@
-/home/ec2-user/github/magento2-sample-data/app/code/Sebwite/Sidebar/view/frontend/web/js/module.js
