@@ -22,5 +22,7 @@
                 </block>
             </container>
         </referenceContainer>
+
+        <referenceBlock name="catalog.compare.sidebar" remove="true"/>
     </body>
 </page>
