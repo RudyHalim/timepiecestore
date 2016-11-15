@@ -332,14 +332,16 @@ require.config(config);
  * Copyright © 2016 Magento. All rights reserved.
  * See COPYING.txt for license details.
  */
-
+/*eslint no-unused-vars: 0*/
 var config = {
     map: {
         '*': {
-            fptAttribute: 'Magento_Weee/js/fpt-attribute'
+            newVideoDialog:  'Magento_ProductVideo/js/new-video-dialog',
+            openVideoModal:  'Magento_ProductVideo/js/video-modal'
         }
     }
 };
+
 require.config(config);
 })();
 (function() {
@@ -355,23 +357,6 @@ var config = {
         }
     }
 };
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-/*eslint no-unused-vars: 0*/
-var config = {
-    map: {
-        '*': {
-            newVideoDialog:  'Magento_ProductVideo/js/new-video-dialog',
-            openVideoModal:  'Magento_ProductVideo/js/video-modal'
-        }
-    }
-};
-
 require.config(config);
 })();
 (function() {
@@ -404,6 +389,21 @@ var config = {
     }
 };
 
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            fptAttribute: 'Magento_Weee/js/fpt-attribute'
+        }
+    }
+};
 require.config(config);
 })();
 

@@ -173,40 +173,7 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            addToCart: 'Magento_Msrp/js/msrp'
-        }
-    }
-};
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
             quickSearch: 'Magento_Search/form-mini'
-        }
-    }
-};
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            bundleOption:   'Magento_Bundle/bundle',
-            priceBundle:    'Magento_Bundle/js/price-bundle',
-            slide:          'Magento_Bundle/js/slide',
-            productSummary: 'Magento_Bundle/js/product-summary'
         }
     }
 };
@@ -243,37 +210,7 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            creditCardType: 'Magento_Payment/cc-type'
-        }
-    }
-};
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            downloadable: 'Magento_Downloadable/downloadable'
-        }
-    }
-};
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            catalogSearch: 'Magento_CatalogSearch/form-mini'
+            addToCart: 'Magento_Msrp/js/msrp'
         }
     }
 };
@@ -304,49 +241,59 @@ require.config(config);
 var config = {
     map: {
         '*': {
+            bundleOption:   'Magento_Bundle/bundle',
+            priceBundle:    'Magento_Bundle/js/price-bundle',
+            slide:          'Magento_Bundle/js/slide',
+            productSummary: 'Magento_Bundle/js/product-summary'
+        }
+    }
+};
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            downloadable: 'Magento_Downloadable/downloadable'
+        }
+    }
+};
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            creditCardType: 'Magento_Payment/cc-type'
+        }
+    }
+};
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
             giftMessage:    'Magento_Sales/gift-message',
             ordersReturns:  'Magento_Sales/orders-returns'
         }
     }
 };
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            giftOptions:    'Magento_GiftMessage/gift-options',
-            extraOptions:   'Magento_GiftMessage/extra-options'
-        }
-    }
-};
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            discountCode:           'Magento_Checkout/js/discount-codes',
-            shoppingCart:           'Magento_Checkout/js/shopping-cart',
-            regionUpdater:          'Magento_Checkout/js/region-updater',
-            sidebar:                'Magento_Checkout/js/sidebar',
-            checkoutLoader:         'Magento_Checkout/js/checkout-loader',
-            checkoutData:           'Magento_Checkout/js/checkout-data',
-            proceedToCheckout:      'Magento_Checkout/js/proceed-to-checkout'
-        }
-    }
-};
-
 require.config(config);
 })();
 (function() {
@@ -384,10 +331,17 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            configurable: 'Magento_ConfigurableProduct/js/configurable'
+            discountCode:           'Magento_Checkout/js/discount-codes',
+            shoppingCart:           'Magento_Checkout/js/shopping-cart',
+            regionUpdater:          'Magento_Checkout/js/region-updater',
+            sidebar:                'Magento_Checkout/js/sidebar',
+            checkoutLoader:         'Magento_Checkout/js/checkout-loader',
+            checkoutData:           'Magento_Checkout/js/checkout-data',
+            proceedToCheckout:      'Magento_Checkout/js/proceed-to-checkout'
         }
     }
 };
+
 require.config(config);
 })();
 (function() {
@@ -402,6 +356,21 @@ var config = {
             multiShipping: 'Magento_Multishipping/js/multi-shipping',
             orderOverview: 'Magento_Multishipping/js/overview',
             payment: 'Magento_Multishipping/js/payment'
+        }
+    }
+};
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            configurable: 'Magento_ConfigurableProduct/js/configurable'
         }
     }
 };
@@ -431,12 +400,74 @@ require.config(config);
 
 var config = {
     map: {
-        "*": {
-            "taxToggle": "Magento_Weee/tax-toggle"
+        '*': {
+            captcha: 'Magento_Captcha/captcha'
+        }
+    }
+};
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+/*eslint no-unused-vars: 0*/
+var config = {
+    map: {
+        '*': {
+            loadPlayer: 'Magento_ProductVideo/js/load-player',
+            fotoramaVideoEvents: 'Magento_ProductVideo/js/fotorama-add-video-events'
         }
     }
 };
 
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            transparent: 'Magento_Payment/transparent'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            recentlyViewedProducts: 'Magento_Reports/js/recently-viewed'
+        }
+    }
+};
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        '*': {
+            transparent:            'Magento_Payment/transparent'
+        }
+    }
+};
 require.config(config);
 })();
 (function() {
@@ -473,39 +504,7 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            transparent:            'Magento_Payment/transparent'
-        }
-    }
-};
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-/*eslint no-unused-vars: 0*/
-var config = {
-    map: {
-        '*': {
-            loadPlayer: 'Magento_ProductVideo/js/load-player',
-            fotoramaVideoEvents: 'Magento_ProductVideo/js/fotorama-add-video-events'
-        }
-    }
-};
-
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            captcha: 'Magento_Captcha/captcha'
+            catalogSearch: 'Magento_CatalogSearch/form-mini'
         }
     }
 };
@@ -520,26 +519,11 @@ require.config(config);
 var config = {
     map: {
         '*': {
-            recentlyViewedProducts: 'Magento_Reports/js/recently-viewed'
+            giftOptions:    'Magento_GiftMessage/gift-options',
+            extraOptions:   'Magento_GiftMessage/extra-options'
         }
     }
 };
-require.config(config);
-})();
-(function() {
-/**
- * Copyright © 2016 Magento. All rights reserved.
- * See COPYING.txt for license details.
- */
-
-var config = {
-    map: {
-        '*': {
-            transparent: 'Magento_Payment/transparent'
-        }
-    }
-};
-
 require.config(config);
 })();
 (function() {
@@ -572,6 +556,22 @@ var config = {
     map: {
         '*': {
             braintree: 'https://js.braintreegateway.com/js/braintree-2.17.6.min.js'
+        }
+    }
+};
+
+require.config(config);
+})();
+(function() {
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+var config = {
+    map: {
+        "*": {
+            "taxToggle": "Magento_Weee/tax-toggle"
         }
     }
 };

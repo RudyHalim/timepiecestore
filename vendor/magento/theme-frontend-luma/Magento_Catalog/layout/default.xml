@@ -22,7 +22,9 @@
                 </block>
             </container>
         </referenceContainer>
-
+        <referenceContainer name="sidebar.additional">
+            <block class="Sebwite\Sidebar\Block\Sidebar" name="category-sidebar" template="Sebwite_Sidebar::sidebar.phtml" />
+        </referenceContainer>
         <referenceBlock name="catalog.compare.sidebar" remove="true"/>
     </body>
 </page>
