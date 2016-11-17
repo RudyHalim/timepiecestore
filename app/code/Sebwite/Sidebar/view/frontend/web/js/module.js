@@ -4,7 +4,7 @@
 require(['jquery'], function ($) {
     $(function () {
 
-        $('.c-sidebar').on('click','.o-list .expand, .o-list .expanded', function () {
+        $('.sidebar').on('click','.o-list .expand, .o-list .expanded', function () {
             var element = $(this).parent('li');
 
             if (element.hasClass('active')) {
